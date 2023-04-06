@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./bundle.js" defer></script>
+        <title>Financity</title>
+        <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon" />
+    </head>
+    <body>
+        <header>
+            <div></div>
+            <div>
+                <h1>Financity Bank</h1>
+            </div>
+            <div id="userInfo">
+                <div><img src="./assets/img/user.png" alt="" /></div>
+                <h3>Olá, Tiago Fuhrmann</h3>
+            </div>
+        </header>
+        <main id="main">
+            <div id="modal">
+                <div id="modalContent">
+                    <div id="modalHeader">
+                        <div class="centralizer"></div>
+                        <h1 class="centralizer" id="modalTitle"></h1>
+                        <div class="centralizer">
+                            <span id="modalCloseBtn">&times;</span>
+                        </div>
+                    </div>
+                    <form id="modalForm"></form>
+                    <button id="modalFormSubmit">Confirmar</button>
+                </div>
+            </div>
+            <div id="balanceContainer">
+                <h1>Saldo:</h1>
+                <div>
+                    <span>R$ </span>
+                    <span id="balance"></span>
+                </div>
+            </div>
+            <div id="historyContainer">
+                <h1>Extrato de Transações</h1>
+                <div id="historyContent"></div>
+            </div>
+            <div id="buttonContainer">
+                <button class="button" id="deposit">Depósito</button>
+                <button class="button" id="transfer">Transferir</button>
+                <button class="button" id="loan">Contratar Empréstimo</button>
+            </div>
+        </main>
+    </body>
+</html>

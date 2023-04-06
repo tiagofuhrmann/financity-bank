@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+body {
+    background: linear-gradient(#0f0f0f, #9198e5);
+    /* background-color: #0f0f0f;*/
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header div {
+    width: 33%;
+}
+
+header div img {
+    height: 70%;
+    width: 70%;
+}
+
+header div div {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+main {
+    padding: 50px 80px;
+    display: flex;
+    gap: 50px;
+}
+#userInfo {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#balanceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #0f0f0f;
+    border-radius: 30px;
+    width: 400px;
+    height: 100px;
+}
+
+#balance {
+    font-size: 28px;
+}
+
+#historyContainer {
+    padding: 10px;
+    height: 600px;
+    width: 400px;
+    border: 5px solid #0f0f0f;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#historyContainer h1 {
+    margin-bottom: 50px;
+}
+
+#historyContent {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.transactionContainer {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 5px 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.valueBox,
+.infoBox {
+    width: 100%;
+}
+
+.valueBox {
+    display: flex;
+}
+.transactionContainer h3 {
+    grid-area: value;
+    margin: auto;
+}
+
+.transactionContainer h5 {
+    grid-area: date;
+}
+
+.transactionContainer h4 {
+    grid-area: type;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #8f54a0 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0f0f0f14;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #8f54a0;
+    border-radius: 10px;
+    border: 3px solid #0f0f0f;
+}
+
+#buttonContainer {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.button {
+    background-color: #9198e5;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+#modal {
+    display: none;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+#modalTitle {
+    display: inline-block;
+}
+
+#modalContent {
+    text-align: center;
+    background-color: #9198e5;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 3px solid #0f0f0f;
+    width: 40%; /* Could be more or less, depending on screen size */
+    height: 300px;
+    border-radius: 20px;
+}
+
+#modalCloseBtn {
+    color: white;
+    text-align: right;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#modalHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.centralizer {
+    width: 33%;
+}
+
+#modalForm {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+#modalForm input {
+    border: 2px solid #8f54a0;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#modalFormSubmit {
+    border-radius: 10px;
+    background-color: #45486b;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
